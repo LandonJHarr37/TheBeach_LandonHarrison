@@ -35,10 +35,9 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/text"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="3"
+                android:layout_weight="2"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -46,32 +45,61 @@
                     android:id="@+id/currentElement"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="currentElement" />
+                    android:text="Pick Element" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="3"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/Red"
+                    android:id="@+id/TVRed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Red level: 210 " />
+                    android:layout_weight="0"
+                    android:text="Red level:" />
 
                 <TextView
-                    android:id="@+id/Green4"
+                    android:id="@+id/TVGreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Green level: 235 " />
+                    android:layout_weight="0"
+                    android:text="Green level:" />
 
                 <TextView
-                    android:id="@+id/Blue"
+                    android:id="@+id/TVBlue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Blue level: 86 " />
+                    android:layout_weight="0"
+                    android:text="Blue level:" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/TVRedVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="pick element" />
+
+                <TextView
+                    android:id="@+id/TVGreenVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="pick element" />
+
+                <TextView
+                    android:id="@+id/TVBlueVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="pick element" />
             </LinearLayout>
 
             <LinearLayout
@@ -81,7 +109,7 @@
                 android:orientation="vertical">
 
                 <SeekBar
-                    android:id="@+id/seekBar2"
+                    android:id="@+id/SBRed"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:min="0"
@@ -89,7 +117,7 @@
                     android:progress="210"/>
 
                 <SeekBar
-                    android:id="@+id/seekBar3"
+                    android:id="@+id/SBGreen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:min="0"
@@ -97,7 +125,7 @@
                     android:progress="235"/>
 
                 <SeekBar
-                    android:id="@+id/seekBar4"
+                    android:id="@+id/SBBlue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:min="0"
